@@ -3,7 +3,7 @@
 
 <img src="https://github.com/Betico1239/currencies_exchanger/assets/132612578/d50e3294-742f-4474-9b01-7e19783d2ef1" width = 50>
 
-<img src="https://static.scientificamerican.com/sciam/cache/file/1DDFE633-2B85-468D-B28D05ADAE7D1AD8_source.jpg?w=1200" width = 250>
+<img src="https://github.com/Betico1239/literalurabybetico/assets/132612578/fe65684a-ff4d-455b-82bc-dace8ac5469a" width = 250>
 
 
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-purple)
