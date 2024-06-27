@@ -5,11 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-<<<<<<< HEAD
 		<version>3.2.0</version>
-=======
-		<version>3.3.1</version>
->>>>>>> 6d5a055caee209bc8339ac67a0898433d62c8853
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.alura</groupId>
@@ -36,7 +32,6 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-<<<<<<< HEAD
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
@@ -54,8 +49,6 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-=======
->>>>>>> 6d5a055caee209bc8339ac67a0898433d62c8853
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
@@ -64,10 +57,7 @@
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-<<<<<<< HEAD
-
-=======
->>>>>>> 6d5a055caee209bc8339ac67a0898433d62c8853
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
