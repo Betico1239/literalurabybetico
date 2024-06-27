@@ -6,6 +6,7 @@ import com.alura.literalura.models.Libro;
 import com.alura.literalura.repository.IRepoLibro;
 import com.alura.literalura.repository.IRepoAutor;
 import com.alura.literalura.services.ConsumoGutendex;
+import org.hibernate.exception.ConstraintViolationException;
 
 import java.util.InputMismatchException;
 import java.util.List;
@@ -147,8 +148,6 @@ public class Principal {
 
         var autores = repoAutor.findAll();
 
-
-
         autores.stream()
                 .forEach(e -> System.out.println(
                         "---------AUTOR----------\n" +
@@ -179,6 +178,9 @@ public class Principal {
         System.out.println("Cuál es el nombre del libro que deseas consultar?");
         var name = teclado.nextLine();
 
+        Optional libroConsultaPrevia = repoLibro.findByTituloContainsIgnoreCase(name);
+
+        if (!libroConsultaPrevia.isPresent()){
             var ex = consumoGutendex.procesarUrl(name);
 
             var autores = ex.autor();
@@ -192,9 +194,15 @@ public class Principal {
                     });
 
             Libro libro = new Libro(ex, autor);
-            repoLibro.save(libro);
 
+            repoLibro.save(libro);
             //Mostrar el libro agregado
             System.out.println(libro);
+
+        }else {
+            System.out.println("El libro que buscas ya se ha registrado previamente");
+
+        }
+
     }
 }
